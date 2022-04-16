@@ -1,7 +1,6 @@
-import { TDataCurrancy } from "../../../@types/dataCurrancy";
+import { TDataCurrency } from "../../../@types/dataCurrency";
 
 export type TCurrencyBlock = {
-  currency: TDataCurrancy;
+  currency: TDataCurrency;
   title: string;
 };
-

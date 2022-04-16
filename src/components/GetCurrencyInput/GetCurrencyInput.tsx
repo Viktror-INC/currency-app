@@ -12,9 +12,9 @@ export default function GetCurrencyInput(props: TgetCurrencyInput) {
     inputCallback,
     showList,
     setShowList,
-    currancyName,
+    currencyName,
     setCurrencyName,
-    opositeCurrancyName,
+    opositeCurrencyName,
     refElem,
   } = props;
 
@@ -27,7 +27,7 @@ export default function GetCurrencyInput(props: TgetCurrencyInput) {
           }}
           className="chooseCurrency"
         >
-          {currancyName}
+          {currencyName}
           <img
             className={classNames("arrowMenu", { arrowMenuActive: showList })}
             src="/images/arrow.png"
@@ -42,7 +42,7 @@ export default function GetCurrencyInput(props: TgetCurrencyInput) {
           })}
         >
           {currency
-            .filter((item) => item.name !== opositeCurrancyName)
+            .filter((item) => item.name !== opositeCurrencyName)
             .map((item, index) => {
               return (
                 <li key={index}>

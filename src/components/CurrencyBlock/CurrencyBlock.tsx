@@ -100,9 +100,9 @@ export default function CurrencyBlock(props: TCurrencyBlock) {
         inputCallback={setValue}
         showList={showfirstList}
         setShowList={setShowFirstList}
-        currancyName={firstCurrencyName}
+        currencyName={firstCurrencyName}
         setCurrencyName={setFirstCurrencyName}
-        opositeCurrancyName={secondCurrencyName}
+        opositeCurrencyName={secondCurrencyName}
         refElem={firstInputRef}
       />
 
@@ -113,9 +113,9 @@ export default function CurrencyBlock(props: TCurrencyBlock) {
         inputCallback={setValue}
         showList={showSecondList}
         setShowList={setShowSecondList}
-        currancyName={secondCurrencyName}
+        currencyName={secondCurrencyName}
         setCurrencyName={setSecondCurrencyName}
-        opositeCurrancyName={firstCurrencyName}
+        opositeCurrencyName={firstCurrencyName}
         refElem={secondInputRef}
       />
     </>
