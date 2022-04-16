@@ -1,0 +1,69 @@
+@import "/styles/global.scss";
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  column-gap: 20px;
+
+  @media only screen and (max-width: $mob) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: $violetDark;
+  text-align: center;
+
+  @media only screen and (max-width: $tab) {
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: $mob) {
+    font-size: 30px;
+  }
+}
+
+.currencyBlockHeader {
+  display: flex;
+  margin: 0 0 0 auto;
+  column-gap: 10px;
+  row-gap: 10px;
+
+  @media only screen and (max-width: $mob) {
+    flex-direction: column;
+    margin: 10px auto auto;
+  }
+}
+
+.currencyItem {
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (max-width: $mob) {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+}
+
+.nameCurrency {
+  color: $violetDark;
+}
+
+.priceCurrency {
+  color: $blue;
+}
+
+.nameCurrency,
+.priceCurrency {
+  @media only screen and (max-width: $tab) {
+    font-size: 20px;
+    text-align: center;
+  }
+}
